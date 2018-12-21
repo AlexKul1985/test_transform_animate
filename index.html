@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+        }
+        
+        .wrap{
+            position: relative;
+            height: 100px;
+            margin: 2px;
+            perspective: 200px;
+            
+            width:calc(100%/10 - 4px);
+
+            
+           
+            
+        }
+            
+     
+
+         .wrap .back.active{
+            transform: rotateY(180deg);
+        }
+        .wrap .front.active{
+            transform: rotateY(360deg);
+        }
+        button{
+            display: inline-block;
+            padding: 10px;
+            outline: none;
+            background: brown;
+            border-radius: 5px;
+            border: none;
+            color:#fff;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .front{
+            /* will-change: transform; */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: rotateY(180deg);
+            transform-origin: center;
+            text-align:center;
+            line-height: 100px;
+            transition: transform .5s;
+            
+            backface-visibility: hidden;
+            background: orange;
+            color:white;
+            
+        }
+
+        .back{
+            /* will-change: transform; */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: rotateY(0deg);
+            transform-origin: center;
+            text-align:center;
+            transition: transform .5s;
+            line-height: 100px;
+            
+
+            background: rgba(8, 159, 230, 0.911);
+            color: white;
+            backface-visibility: hidden;
+            
+        }
+
+       .container{
+        position: relative;
+           max-width: 980px;
+           width: 95%;
+           margin: 0 auto;
+           display: flex;
+           flex-wrap: wrap;
+           overflow: hidden;
+       }
+       .set_absolute{
+           position:absolute;
+       }
+          
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+            <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                        <div class="front">Hello</div>
+                        <div class="back">World</div>
+                    </div>
+                    <div class="wrap">
+                        <div class="front">Hello</div>
+                        <div class="back">World</div>
+                    </div>
+            <div class="wrap">
+                <div class="front">Hello</div>
+                <div class="back">World</div>
+            </div>
+            <div class="wrap">
+                <div class="front">Hello</div>
+                <div class="back">World</div>
+            </div>
+            <div class="wrap">
+                <div class="front">Hello</div>
+                <div class="back">World</div>
+            </div>
+            <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                        <div class="front">Hello</div>
+                        <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                    <div class="front">Hello</div>
+                    <div class="back">World</div>
+                </div>
+                <div class="wrap">
+                        <div class="front">Hello</div>
+                        <div class="back">World</div>
+                    </div>
+                    <div class="wrap">
+                        <div class="front">Hello</div>
+                        <div class="back">World</div>
+                    </div>
+                    <div class="wrap">
+                        <div class="front">Hello</div>
+                        <div class="back">World</div>
+                    </div>
+                    <div class="wrap">
+                            <div class="front">Hello</div>
+                            <div class="back">World</div>
+                        </div>
+                        <div class="wrap">
+                            <div class="front">Hello</div>
+                            <div class="back">World</div>
+                        </div>
+                        <div class="wrap">
+                            <div class="front">Hello</div>
+                            <div class="back">World</div>
+                        </div>
+                        <div class="wrap">
+                                <div class="front">Hello</div>
+                                <div class="back">World</div>
+                        </div>
+                        <div class="wrap">
+                            <div class="front">Hello</div>
+                            <div class="back">World</div>
+                        </div>
+                        <div class="wrap">
+                            <div class="front">Hello</div>
+                            <div class="back">World</div>
+                        </div>
+                        <div class="wrap">
+                                <div class="front">Hello</div>
+                                <div class="back">World</div>
+                            </div>
+                            <div class="wrap">
+                                <div class="front">Hello</div>
+                                <div class="back">World</div>
+                            </div>
+                            <div class="wrap">
+                                <div class="front">Hello</div>
+                                <div class="back">World</div>
+                            </div>
+                            <div class="wrap">
+                                    <div class="front">Hello</div>
+                                    <div class="back">World</div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="front">Hello</div>
+                                    <div class="back">World</div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="front">Hello</div>
+                                    <div class="back">World</div>
+                                </div>
+                                <div class="wrap">
+                                        <div class="front">Hello</div>
+                                        <div class="back">World</div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="front">Hello</div>
+                                    <div class="back">World</div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="front">Hello</div>
+                                    <div class="back">World</div>
+                                </div>
+                                <div class="wrap">
+                                        <div class="front">Hello</div>
+                                        <div class="back">World</div>
+                                    </div>
+                                    <div class="wrap">
+                                        <div class="front">Hello</div>
+                                        <div class="back">World</div>
+                                    </div>
+                                    <div class="wrap">
+                                        <div class="front">Hello</div>
+                                        <div class="back">World</div>
+                                    </div>
+                                    <div class="wrap">
+                                            <div class="front">Hello</div>
+                                            <div class="back">World</div>
+                                        </div>
+                                        <div class="wrap">
+                                            <div class="front">Hello</div>
+                                            <div class="back">World</div>
+                                        </div>
+                                        <div class="wrap">
+                                            <div class="front">Hello</div>
+                                            <div class="back">World</div>
+                                        </div>
+                                        <div class="wrap">
+                                                <div class="front">Hello</div>
+                                                <div class="back">World</div>
+                                        </div>
+                                        <div class="wrap">
+                                            <div class="front">Hello</div>
+                                            <div class="back">World</div>
+                                        </div>
+                                        <div class="wrap">
+                                            <div class="front">Hello</div>
+                                            <div class="back">World</div>
+                                        </div>
+                                        <div class="wrap">
+                                                <div class="front">Hello</div>
+                                                <div class="back">World</div>
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="front">Hello</div>
+                                                <div class="back">World</div>
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="front">Hello</div>
+                                                <div class="back">World</div>
+                                            </div>
+                                            <div class="wrap">
+                                                    <div class="front">Hello</div>
+                                                    <div class="back">World</div>
+                                                </div>
+                                                <div class="wrap">
+                                                    <div class="front">Hello</div>
+                                                    <div class="back">World</div>
+                                                </div>
+                                                <div class="wrap">
+                                                    <div class="front">Hello</div>
+                                                    <div class="back">World</div>
+                                                </div>
+                                                <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                </div>
+                                                <div class="wrap">
+                                                    <div class="front">Hello</div>
+                                                    <div class="back">World</div>
+                                                </div>
+                                                <div class="wrap">
+                                                    <div class="front">Hello</div>
+                                                    <div class="back">World</div>
+                                                </div>
+                                                <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                                <div class="front">Hello</div>
+                                                                <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                                <div class="front">Hello</div>
+                                                                <div class="back">World</div>
+                                                            </div>
+                                                            <div class="wrap">
+                                                                <div class="front">Hello</div>
+                                                                <div class="back">World</div>
+                                                            </div>
+                                                            <div class="wrap">
+                                                                    <div class="front">Hello</div>
+                                                                    <div class="back">World</div>
+                                                                </div>
+                                                                <div class="wrap">
+                                                                    <div class="front">Hello</div>
+                                                                    <div class="back">World</div>
+                                                                </div>
+                                                                <div class="wrap">
+                                                                    <div class="front">Hello</div>
+                                                                    <div class="back">World</div>
+                                                                </div>
+                                                                <div class="wrap">
+                                                                        <div class="front">Hello</div>
+                                                                        <div class="back">World</div>
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                        <div class="front">Hello</div>
+                                                                        <div class="back">World</div>
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                        <div class="front">Hello</div>
+                                                                        <div class="back">World</div>
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                            <div class="front">Hello</div>
+                                                                            <div class="back">World</div>
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                        <div class="front">Hello</div>
+                                                                        <div class="back">World</div>
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                        <div class="front">Hello</div>
+                                                                        <div class="back">World</div>
+                                                                    </div>
+                                                        
+        </div>
+        <button>Перемешать</button>
+    
+        
+            
+    
+        
+       
+    
+      
+    
+    <script>
+       
+        let fronts = document.querySelectorAll('.front');
+        let backs = document.querySelectorAll('.back');
+        
+
+        class RandomTransfromElems{
+            constructor({fronts,backs}){
+                this.fronts = fronts;
+                this.backs = backs;
+                this.id = null;
+                this.init();
+                
+            }
+            init(){
+                this.generateNubersForFront();
+                this.animate();
+            }
+
+            generateNubersForFront(){
+                for(let i = 0; i < this.backs.length; i++){
+                    this.backs[i].textContent = i + 1;
+                }
+            }
+            generateRandomNumber(){
+                return Math.floor(Math.random()*this.fronts.length);
+            }
+
+            animate(){
+                let idx = this.generateRandomNumber();
+                let count = 0;
+               
+                   let frameHandler = () => {
+                         count++;
+                         console.log(count)
+                       if(this.fronts[idx].classList.contains('active')) { 
+                           this.fronts[idx].classList.remove('active');
+                            this.backs[idx].classList.remove('active');
+                        }
+
+                       else { this.fronts[idx].classList.add('active'); this.backs[idx].classList.add('active') }
+                       
+                       if(count == 2) { 
+                        this.fronts[idx].removeEventListener('transitionend',handler);
+                        setTimeout(() => {
+                            requestAnimationFrame(this.animate.bind(this));
+                        },500)
+                    } 
+                };
+
+                let handler = () => {
+                        window.requestAnimationFrame(frameHandler)
+                    };
+
+                    this.fronts[idx].addEventListener('transitionend',handler);
+                    
+                    window.requestAnimationFrame(frameHandler)
+                       
+                    
+                }
+            }
+                            
+
+                
+                
+                    
+               
+
+        new RandomTransfromElems({
+            fronts,
+            backs
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

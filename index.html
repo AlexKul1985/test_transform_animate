@@ -14,19 +14,41 @@
         body{
             text-align: center;
         }
+        .container{
+            
+           max-width: 980px;
+           width: 95%;
+           display: flex;
+           flex-wrap: wrap;
+           overflow: hidden;
+           margin: 0 auto;
+           background: rgba(30, 167, 156, 0.541);
+           /* padding: 20px; */
+           border-radius: 10px;
+       }
         
         .wrap{
             position: relative;
+            
             height: 100px;
+            width:calc(100%/10 - 4px);
             margin: 2px;
             perspective: 200px;
+            transform: translate(0,0);
+            transition: transform .9s;
+        }
+        .wrap:first-child{
+          
+        }
             
-            width:calc(100%/10 - 4px);
+            
+            
+            
+            
 
             
            
             
-        }
             
      
 
@@ -59,7 +81,7 @@
             transition: transform .5s;
             
             backface-visibility: hidden;
-            background: orange;
+            background: rgb(75, 117, 111);
             color:white;
             
         }
@@ -76,21 +98,13 @@
             line-height: 100px;
             
 
-            background: rgba(8, 159, 230, 0.911);
+            background: rgba(25, 47, 58, 0.911);
             color: white;
             backface-visibility: hidden;
             
         }
 
-       .container{
-        position: relative;
-           max-width: 980px;
-           width: 95%;
-           margin: 0 auto;
-           display: flex;
-           flex-wrap: wrap;
-           overflow: hidden;
-       }
+      
        .set_absolute{
            position:absolute;
        }
@@ -105,46 +119,6 @@
                     <div class="back">World</div>
                 </div>
                 <div class="wrap">
-                    <div class="front">Hello</div>
-                    <div class="back">World</div>
-                </div>
-                <div class="wrap">
-                    <div class="front">Hello</div>
-                    <div class="back">World</div>
-                </div>
-                <div class="wrap">
-                        <div class="front">Hello</div>
-                        <div class="back">World</div>
-                    </div>
-                    <div class="wrap">
-                        <div class="front">Hello</div>
-                        <div class="back">World</div>
-                    </div>
-            <div class="wrap">
-                <div class="front">Hello</div>
-                <div class="back">World</div>
-            </div>
-            <div class="wrap">
-                <div class="front">Hello</div>
-                <div class="back">World</div>
-            </div>
-            <div class="wrap">
-                <div class="front">Hello</div>
-                <div class="back">World</div>
-            </div>
-            <div class="wrap">
-                    <div class="front">Hello</div>
-                    <div class="back">World</div>
-                </div>
-                <div class="wrap">
-                    <div class="front">Hello</div>
-                    <div class="back">World</div>
-                </div>
-                <div class="wrap">
-                    <div class="front">Hello</div>
-                    <div class="back">World</div>
-                </div>
-                <div class="wrap">
                         <div class="front">Hello</div>
                         <div class="back">World</div>
                 </div>
@@ -168,86 +142,7 @@
                         <div class="front">Hello</div>
                         <div class="back">World</div>
                     </div>
-                    <div class="wrap">
-                            <div class="front">Hello</div>
-                            <div class="back">World</div>
-                        </div>
-                        <div class="wrap">
-                            <div class="front">Hello</div>
-                            <div class="back">World</div>
-                        </div>
-                        <div class="wrap">
-                            <div class="front">Hello</div>
-                            <div class="back">World</div>
-                        </div>
-                        <div class="wrap">
-                                <div class="front">Hello</div>
-                                <div class="back">World</div>
-                        </div>
-                        <div class="wrap">
-                            <div class="front">Hello</div>
-                            <div class="back">World</div>
-                        </div>
-                        <div class="wrap">
-                            <div class="front">Hello</div>
-                            <div class="back">World</div>
-                        </div>
-                        <div class="wrap">
-                                <div class="front">Hello</div>
-                                <div class="back">World</div>
-                            </div>
-                            <div class="wrap">
-                                <div class="front">Hello</div>
-                                <div class="back">World</div>
-                            </div>
-                            <div class="wrap">
-                                <div class="front">Hello</div>
-                                <div class="back">World</div>
-                            </div>
-                            <div class="wrap">
-                                    <div class="front">Hello</div>
-                                    <div class="back">World</div>
-                                </div>
-                                <div class="wrap">
-                                    <div class="front">Hello</div>
-                                    <div class="back">World</div>
-                                </div>
-                                <div class="wrap">
-                                    <div class="front">Hello</div>
-                                    <div class="back">World</div>
-                                </div>
-                                <div class="wrap">
-                                        <div class="front">Hello</div>
-                                        <div class="back">World</div>
-                                </div>
-                                <div class="wrap">
-                                    <div class="front">Hello</div>
-                                    <div class="back">World</div>
-                                </div>
-                                <div class="wrap">
-                                    <div class="front">Hello</div>
-                                    <div class="back">World</div>
-                                </div>
-                                <div class="wrap">
-                                        <div class="front">Hello</div>
-                                        <div class="back">World</div>
-                                    </div>
-                                    <div class="wrap">
-                                        <div class="front">Hello</div>
-                                        <div class="back">World</div>
-                                    </div>
-                                    <div class="wrap">
-                                        <div class="front">Hello</div>
-                                        <div class="back">World</div>
-                                    </div>
-                                    <div class="wrap">
-                                            <div class="front">Hello</div>
-                                            <div class="back">World</div>
-                                        </div>
-                                        <div class="wrap">
-                                            <div class="front">Hello</div>
-                                            <div class="back">World</div>
-                                        </div>
+           
                                         <div class="wrap">
                                             <div class="front">Hello</div>
                                             <div class="back">World</div>
@@ -280,6 +175,87 @@
                                                     <div class="front">Hello</div>
                                                     <div class="back">World</div>
                                                 </div>
+                                                <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                        <div class="front">Hello</div>
+                                                        <div class="back">World</div>
+                                                    </div>
+                                                    <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                                        <div class="wrap">
+                                                            <div class="front">Hello</div>
+                                                            <div class="back">World</div>
+                                                        </div>
+                                               
+                                                                            <div class="wrap">
+                                                                                <div class="front">Hello</div>
+                                                                                <div class="back">World</div>
+                                                                            </div>
+                                                                            <div class="wrap">
+                                                                                    <div class="front">Hello</div>
+                                                                                    <div class="back">World</div>
+                                                                            </div>
+                                                                            <div class="wrap">
+                                                                                <div class="front">Hello</div>
+                                                                                <div class="back">World</div>
+                                                                            </div>
+                                                                            <div class="wrap">
+                                                                                <div class="front">Hello</div>
+                                                                                <div class="back">World</div>
+                                                                            </div>
+                                                                            <div class="wrap">
+                                                                                    <div class="front">Hello</div>
+                                                                                    <div class="back">World</div>
+                                                                                </div>
+                                                                                <div class="wrap">
+                                                                                        <div class="front">Hello</div>
+                                                                                        <div class="back">World</div>
+                                                                                    </div>
+                                                                                    <div class="wrap">
+                                                                                            <div class="front">Hello</div>
+                                                                                            <div class="back">World</div>
+                                                                                    </div>
+                                                                                    <div class="wrap">
+                                                                                        <div class="front">Hello</div>
+                                                                                        <div class="back">World</div>
+                                                                                    </div>
+                                                                                    <div class="wrap">
+                                                                                        <div class="front">Hello</div>
+                                                                                        <div class="back">World</div>
+                                                                                    </div>
+                                                                                    <div class="wrap">
+                                                                                            <div class="front">Hello</div>
+                                                                                            <div class="back">World</div>
+                                                                                        </div>
+                                                                                <div class="wrap">
+                                                                                    <div class="front">Hello</div>
+                                                                                    <div class="back">World</div>
+                                                                                </div>
+                                                                                <div class="wrap">
+                                                                                    <div class="front">Hello</div>
+                                                                                    <div class="back">World</div>
+                                                                                </div>
+                                                                                <div class="wrap">
+                                                                                        <div class="front">Hello</div>
+                                                                                        <div class="back">World</div>
+                                                                                    </div>
                                                 <div class="wrap">
                                                     <div class="front">Hello</div>
                                                     <div class="back">World</div>
@@ -382,21 +358,14 @@
                                                                     </div>
                                                         
         </div>
-        <button>Перемешать</button>
+        <button class="shuffle">Перемешать</button>
+        <button class="reset">Сбросить в исходное</button>
     
-        
-            
-    
-        
-       
-    
-      
-    
-    <script>
+     <script>
        
         let fronts = document.querySelectorAll('.front');
         let backs = document.querySelectorAll('.back');
-        
+        // let top_fronts_1 = fronts[0].getBoundingClientRect().top;
 
         class RandomTransfromElems{
             constructor({fronts,backs}){
@@ -408,7 +377,7 @@
             }
             init(){
                 this.generateNubersForFront();
-                this.animate();
+                // this.animate();
             }
 
             generateNubersForFront(){
@@ -435,10 +404,10 @@
                        else { this.fronts[idx].classList.add('active'); this.backs[idx].classList.add('active') }
                        
                        if(count == 2) { 
-                        this.fronts[idx].removeEventListener('transitionend',handler);
-                        setTimeout(() => {
-                            requestAnimationFrame(this.animate.bind(this));
-                        },500)
+                            this.fronts[idx].removeEventListener('transitionend',handler);
+                            setTimeout(() => {
+                                requestAnimationFrame(this.animate.bind(this));
+                            },0)
                     } 
                 };
 
@@ -453,31 +422,322 @@
                     
                 }
             }
-                            
-
-                
-                
-                    
-               
-
+        
         new RandomTransfromElems({
             fronts,
             backs
         })
 
+         class ShufleElement{
+
+                constructor({el,pos,startPos}){
+                    this.el = el;
+                    this.pos = pos;
+                    this.prevPos = null;
+                    this.startPos = startPos;
+                    
+                }
+
+                setPos(pos,def,flag,ix,iy=0){
+                    this.prevPos = this.pos;
+                    this.pos = pos;
+                    
+                    let left;
+                    let top;
+                    
+                   if(!flag){
+                        left = this.pos.left - def + ix*(Math.round(parseFloat(getComputedStyle(this.el).width)) + 4) - 2;
+                        top = this.pos.top - 2 - iy*(Math.round(parseFloat(getComputedStyle(this.el).height)) + 4);
+                        
+                        
+                        console.log('flag')
+                   }
+
+                   else{
+                         left =  -this.prevPos.left + def + ix*((Math.round(parseFloat(getComputedStyle(this.el).width)) + 4)) + 2;
+                         top = -this.prevPos.top + 2 + iy*(Math.round(parseFloat(getComputedStyle(this.el).height)) + 4);
+                        
+                       
+                         console.log('flag1')
+                   }
+
+                    
+                    this.el.style.transform = 'translate('+ left +'px,'+ top +'px)';
+                    
+                }
+
+                reset(pos,def,flag,ix,iy=0){
+                    this.prevPos = this.pos;
+                    this.startPos = pos;
+                    this.pos = pos;
+                    let left;
+                    let top;
+                    
+                   if(!flag){
+                        left = this.pos.left - def + ix*(Math.round(parseFloat(getComputedStyle(this.el).width)) + 4) - 2;
+                        top = this.pos.top - 2 - iy*(Math.round(parseFloat(getComputedStyle(this.el).height)) + 4);
+                        console.log('flag')
+                    }
+                        
+                        
+
+                   else{
+                         left =  -this.prevPos.left + def + ix*((Math.round(parseFloat(getComputedStyle(this.el).width)) + 4)) + 2;
+                         top = -this.prevPos.top + 2 + iy*(Math.round(parseFloat(getComputedStyle(this.el).height)) + 4);
+                         console.log('flag1')
+                    }
+                        
+                       
+
+                    
+                    this.el.style.transform = 'translate('+ left +'px,'+ top +'px)';
+                }
+
+                prevStep(){
+                    if(!this.prevPos) return;
+                    this.el.style.transform = 'translate('+ this.startPos.left +'px,'+ this.startPos.top +'px)';
+                }
+}
+
 
         class ShuffleEments{
             constructor({elems}){
                 this.elems = elems;
+                this.suffle_els = [];
+                this.countClick = 0;
                 this.init();
+                console.log(this.suffle_els)
             }
             
             init(){
+                
+                let cont = document.querySelector('.container');
+                let heightContainer = getComputedStyle(cont).height;
+              
+                this.widthContainer = Math.round(parseFloat(cont.getBoundingClientRect().left));
+                this.heightContainer = Math.round(parseFloat(heightContainer));
+                console.log(' WIDTH ' + this.widthContainer)
+                console.log('height '+heightContainer);
+                cont.style.height = heightContainer;
+                this.setPositionAbsoluteToElements();
+                this.generateArrNumbers();
+            }   
+
+            getPositionElement(el){
+                return {
+                    left: el.getBoundingClientRect().left, 
+                    top: el.getBoundingClientRect().top  
+                }
+                
+            }
+
+            setPositionAbsoluteToElements(){
+                for(let i = 0; i < this.elems.length; i++){
+                    
+                    
+                    let top = Math.round(
+                        this.getPositionElement(this.elems[i])
+                        .top
+                        );
+
+                    let left = Math.round(
+                        this.getPositionElement(this.elems[i])
+                        .left
+                        );
+
+                    let width = getComputedStyle(this.elems[i]).width;
+
+                    this.suffle_els.push(new ShufleElement({
+                        el: this.elems[i],
+                        pos: {
+                            left,
+                            top
+                        },
+                        startPos: {
+                            left,
+                            top
+                            }
+                    }))
+                            
+                    console.log(left, top)
+                    
+                    requestAnimationFrame(() => {
+                       
+                        requestAnimationFrame(() => {
+                            this.elems[i].style.position = 'absolute';
+                            this.elems[i].style.left = left +'px';
+                            this.elems[i].style.top = top +'px';
+                            this.elems[i].style.margin = 0;
+                            this.elems[i].style.width = width;
+                        })
+                    })
+                }                
+            }
+                            
+                            
+                           
+                            
+                           
+            logicShuffle([a,b]){
+                if(a < b){
+                    let x = (9 % a !== 9 || a == 0) ? a : (9 % a == 9 && a % 10 == 0) ? 0 : ((a/10).toString().split('.')[1]);
+                    let y = a < 9 ? 0 : (Math.floor(a/10));
+                    this.suffle_els[a].setPos(this.suffle_els[b].startPos,this.widthContainer,false,x*(-1),y);
+                    this.suffle_els[b].setPos(this.suffle_els[a].startPos, this.widthContainer ,true,x,y);
+                }
+
+                else{
+                    let x = (9 % b !== 9 || b == 0) ? b : (9 % b == 9 && b % 10 == 0) ? 0 : ((b/10).toString().split('.')[1]);
+                    let y = b < 9 ? 0 : (Math.floor(b/10));
+                    this.suffle_els[b].setPos(this.suffle_els[a].startPos,this.widthContainer,false,x*(-1),y);
+                    this.suffle_els[a].setPos(this.suffle_els[b].startPos, this.widthContainer ,true,x,y);
+                }
+            }   
+
+            logicReset([a,b]){
+                if(a < b){
+                    let x1 = (9 % a !== 9 || a == 0) ? a : (9 % a == 9 && a % 10 == 0) ? 0 : ((a/10).toString().split('.')[1]);
+                    let x2 = (9 % b !== 9 || b == 0) ? b : (9 % b == 9 && b % 10 == 0) ? 0 : ((b/10).toString().split('.')[1]);
+                    let y1 = a < 9 ? 0 : (Math.floor(a/10));
+                    let y2 = b < 9 ? 0 : (Math.floor(b/10));
+                    this.suffle_els[b].reset(this.suffle_els[a].prevPos,this.widthContainer,false,x1*(-1),y1);
+                    this.suffle_els[a].reset(this.suffle_els[b].prevPos, this.widthContainer ,true,x2,y2);
+                }
+
+                else{
+                    let x1 = (9 % b !== 9 || b == 0) ? b : (9 % b == 9 && b % 10 == 0) ? 0 : ((b/10).toString().split('.')[1]);
+                    let x2 = (9 % a !== 9 || a == 0) ? a : (9 % a == 9 && a % 10 == 0) ? 0 : ((a/10).toString().split('.')[1]);
+                    let y1 = b < 9 ? 0 : (Math.floor(b/10));
+                    let y2 = a < 9 ? 0 : (Math.floor(a/10));
+                    this.suffle_els[a].reset(this.suffle_els[b].prevPos,this.widthContainer,false,x1*(-1),y1);
+                    this.suffle_els[b].reset(this.suffle_els[a].prevPos, this.widthContainer ,true,x2,y2);
+                }
+            }
+
+               
+                
+                
+
+               
+                
+               
+
+            generateArrNumbers(){
+                this.arrIndexes = [];
+                for(let i = 0; i < this.suffle_els.length; i++){
+                    this.arrIndexes.push(i);
+
+                } 
+            }  
+            
+            getArrShuffleNumbers(isSort = true){
+                let arr = [];
+                let idx = -1;
+            
+                if(isSort){
+                    this.arrIndexes.sort((a, b) => {
+                    return Math.random() > 0.5;
+                    })
+                }
+               
+
+             console.log(this.arrIndexes)
+
+            for(let i = 0; i < this.arrIndexes.length; i++){
+                    if(i % 2 == 0){
+                        idx++;
+                        arr[idx] = [];
+                        arr[idx].push(this.arrIndexes[i]);
+                    }
+                    else{
+                        arr[idx].push(this.arrIndexes[i]);
+                    }
+                }
+
+                return arr;
+            }           
+                       
+            reset(){
+                let arr = this.getArrShuffleNumbers(false);
+                for(let i = 0; i < arr.length; i++){
+                    this.logicReset(arr[i])
+                }
+            }
+            shuffle(){
+                let arr = this.getArrShuffleNumbers();
+                for(let i = 0; i < arr.length; i++){
+                    this.logicShuffle(arr[i])
+                }
+
+
+            //    // if(!this.countClick){
+            //     this.suffle_els[1].setPos(this.suffle_els[33].startPos,this.widthContainer,false,-1);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //  // то flag = false , index = (-1)*n
+               
+            //    this.suffle_els[33].setPos(this.suffle_els[1].startPos, this.widthContainer ,true,1);//наоборот
+            //   this.suffle_els[7].setPos(this.suffle_els[37].startPos,this.widthContainer,false,-7);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //  // то flag = false , index = (-1)*n
+               
+            //   this.suffle_els[37].setPos(this.suffle_els[7].startPos, this.widthContainer ,true,7);//наоборот
+
+            //   this.suffle_els[0].setPos(this.suffle_els[25].startPos,this.widthContainer,false,0);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //  // то flag = false , index = (-1)*n
+               
+            //   this.suffle_els[25].setPos(this.suffle_els[0].startPos, this.widthContainer ,true,0);//наоборот
+
+            //     this.suffle_els[31].setPos(this.suffle_els[56].startPos,this.widthContainer,false,-1,3);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //  // то flag = false , index = (-1)*n
+               
+            //   this.suffle_els[56].setPos(this.suffle_els[31].startPos, this.widthContainer ,true,1,3);//наоборот
+            //     //}
+            //     //else{
+
+            //     //}
+            
+               
+            //    setTimeout(() => {
+            //             this.suffle_els[33].setPos(this.suffle_els[1].prevPos,this.widthContainer,false,-1,0);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //             // то flag = false , index = (-1)*n
+                        
+            //             this.suffle_els[1].setPos(this.suffle_els[33].prevPos, this.widthContainer ,true,3,3);//наоборот
+            //             this.suffle_els[37].setPos(this.suffle_els[7].prevPos,this.widthContainer,false,-7,0);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //             // то flag = false , index = (-1)*n
+                        
+            //             this.suffle_els[7].setPos(this.suffle_els[37].prevPos, this.widthContainer ,true,7,3);//наоборот
+
+            //             this.suffle_els[25].setPos(this.suffle_els[0].prevPos,this.widthContainer,false,0,0);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //             // то flag = false , index = (-1)*n
+                        
+            //             this.suffle_els[0].setPos(this.suffle_els[25].prevPos, this.widthContainer ,true,5,2);//наоборот
+                        
+            //             this.suffle_els[56].setPos(this.suffle_els[31].prevPos, this.widthContainer ,false,-1,3);//наоборот
+            //             this.suffle_els[31].setPos(this.suffle_els[56].prevPos,this.widthContainer,true,6,5);//если в элемент с меньшим индексом вставляем элемент с большим индексом,
+            //  // то flag = false , index = (-1)*n
+               
+            //    },2000)
 
             }
 
-
         }
+
+
+       let s =  new ShuffleEments({
+            elems: document.querySelectorAll('.wrap')
+        })
+        
+        document.querySelector('button.shuffle').addEventListener('click',() => {
+            s.shuffle();
+            console.log('SHUFFLE',s.suffle_els)
+        })
+        document.querySelector('button.reset').addEventListener('click',() => {
+            s.reset();
+            console.log('RESET',s.suffle_els)
+        })
+
+
+       
+
+
     </script>
 </body>
 </html>

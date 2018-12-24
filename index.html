@@ -90,6 +90,11 @@
            display: flex;
            flex-wrap: wrap;
            overflow: hidden;
+           padding: 30px;
+           box-sizing: border-box;
+           background: rgb(76, 99, 121);
+           border-radius: 10px;
+           margin-top:20px;
        }
        .set_absolute{
            position:absolute;
@@ -399,9 +404,10 @@
         
 
         class RandomTransfromElems{
-            constructor({fronts,backs}){
+            constructor({fronts,backs,pause = 0}){
                 this.fronts = fronts;
                 this.backs = backs;
+                this.pause = pause;
                 this.id = null;
                 this.init();
                 
@@ -438,7 +444,7 @@
                         this.fronts[idx].removeEventListener('transitionend',handler);
                         setTimeout(() => {
                             requestAnimationFrame(this.animate.bind(this));
-                        },500)
+                        },this.pause)
                     } 
                 };
 
@@ -462,7 +468,8 @@
 
         new RandomTransfromElems({
             fronts,
-            backs
+            backs,
+            pause:500
         })
 
 
@@ -471,7 +478,7 @@
                 this.elems = elems;
                 this.init();
             }
-            
+
             init(){
 
             }
